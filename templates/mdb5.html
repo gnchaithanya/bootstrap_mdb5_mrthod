@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+    <style>
+        #abc{
+          height: 300px;
+          width: 300px;
+          margin-left: 400px;
+          box-shadow: 0px 0px 20px aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="card" id="abc">
+        <img src="{% static 'images/child.jpeg' %}" class="card-img-top" alt="Fissure in Sandstone" />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#!" class="btn btn-primary">Button</a>
+        </div>
+      </div>
+      
+      <script src="{% static  'js/mdb.min.js' %}"></script>
+</body>
+</html> 
